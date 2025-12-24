@@ -103,6 +103,7 @@ Thumbs.db
 
 # Test files and local testing
 test-widget-local.html
+test-widget.html
 LOCAL_EMBED_SCRIPT.html
 **/test-*.html
 **/test-*.js
@@ -110,6 +111,23 @@ LOCAL_EMBED_SCRIPT.html
 test-*.html
 test-*.js
 test-*.sh
+
+# Check/verification scripts (local utilities)
+check-*.js
+**/check-*.js
+check-*.sh
+**/check-*.sh
+
+# Test data creation scripts
+create-test-*.js
+**/create-test-*.js
+create-test-*.sh
+**/create-test-*.sh
+
+# Testing documentation
+TESTING.md
+**/TESTING.md
+**/*test*.md
 
 # Shell scripts (local utilities, not needed on GitHub)
 # Vercel handles builds automatically, so these are local-only
