@@ -1,0 +1,148 @@
+# Markdown files (documentation, plans, etc.)
+*.md
+**/*.md
+# Exception: Track CHANGES.md
+!CHANGES.md
+
+# Environment files and secrets
+.env
+.env.*
+*.env
+env.example
+**/env.example
+**/*.env*
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Specific .env files in apps directories
+apps/api/.env
+apps/dashboard/.env
+apps/widget/.env
+apps/**/.env
+apps/**/.env.*
+
+# Sensitive data files
+**/data/*.json
+**/data/chat-sessions.json
+**/data/events.json
+**/data/leads.json
+**/data/widget-config.json
+homesfy-chat-buddy/apps/api/data/*.json
+
+# Uploaded files
+apps/api/uploads/*
+!apps/api/uploads/.gitkeep
+
+# API keys and secrets (but NOT config.js files - those are source code)
+# Only ignore files that actually contain hardcoded secrets
+*api-key*.txt
+*api-key*.json
+*secret*.txt
+*secret*.json
+*password*.txt
+*password*.json
+*credentials*.txt
+*credentials*.json
+
+# Node modules
+node_modules/
+**/node_modules/
+
+# Build and dist directories
+dist/
+build/
+**/dist/
+**/build/
+*.min.js
+*.min.css
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+*.log.*
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE and editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+.cursor/
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+.temp/
+
+# Backup files
+*.bak
+*.old
+*-bak-*
+*-old-*
+*.*-bak
+*.*-old
+
+# Test files and local testing
+test-widget-local.html
+LOCAL_EMBED_SCRIPT.html
+**/test-*.html
+**/test-*.js
+**/test-*.sh
+test-*.html
+test-*.js
+test-*.sh
+
+# Shell scripts (local utilities, not needed on GitHub)
+# Vercel handles builds automatically, so these are local-only
+*.sh
+**/*.sh
+*.bat
+**/*.bat
+
+# Exceptions: If you need specific scripts, uncomment and add them
+# !build-all.sh
+# !deploy.sh
+
+# Package lock files (optional - uncomment if you don't want to track them)
+# package-lock.json
+# **/package-lock.json
+
+# Vercel deployment directory (but keep vercel.json configs)
+.vercel/
+
+# Coverage and testing
+coverage/
+.nyc_output/
+*.lcov
+
+# Misc
+*.pem
+*.key
+*.cert
+*.crt
+*.p12
+*.pfx
+
+
+
+.vercel
+.env*.local

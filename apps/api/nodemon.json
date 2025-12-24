@@ -1,0 +1,24 @@
+{
+  "watch": false,
+  "ignore": [
+    "node_modules",
+    "data/**",
+    "*.log",
+    "dist/**",
+    "build/**",
+    ".git/**",
+    ".env",
+    "*.test.js",
+    "*.spec.js",
+    "package*.json",
+    "nodemon.json",
+    "**/data/**/*.json",
+    "**/data/**/*"
+  ],
+  "ext": "js,mjs,cjs",
+  "delay": 2000,
+  "verbose": false,
+  "restartable": "rs",
+  "legacyWatch": false
+}
+

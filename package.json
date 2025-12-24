@@ -1,0 +1,17 @@
+{
+  "name": "homesfy-chat-buddy",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -n \"API,DASHBOARD,WIDGET\" -c \"blue,green,yellow\" \"npm run dev:api\" \"npm run dev:dashboard\" \"npm run dev:widget\"",
+    "start": "npm run dev",
+    "dev:api": "cd apps/api && npm run dev",
+    "dev:dashboard": "cd apps/dashboard && npm run dev",
+    "dev:widget": "cd apps/widget && npm run dev",
+    "build": "bash build-all.sh",
+    "test": "bash test-local.sh"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
